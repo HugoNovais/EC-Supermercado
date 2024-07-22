@@ -1,4 +1,6 @@
 using Ec_Supermercado.Api.DataContext;
+using Ec_Supermercado.Api.Repositories.UsuarioRepository;
+using Ec_Supermercado.Api.Services.UsuarioService;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -16,6 +18,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"));
 });
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
