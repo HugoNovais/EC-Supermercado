@@ -16,10 +16,10 @@ namespace Ec_Supermercado.Api.Services.CategoriaService
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<CategoriaDTO>> GetCategorias()
+        public async Task<IEnumerable<CategoriaDTOTwo>> GetCategorias()
         {
             var categoriaEntity = await _repository.GetAll();
-            return _mapper.Map<IEnumerable<CategoriaDTO>>(categoriaEntity);
+            return _mapper.Map<IEnumerable<CategoriaDTOTwo>>(categoriaEntity);
         }
 
         public async Task<IEnumerable<CategoriaDTO>> GetProdutosPorCategoria()

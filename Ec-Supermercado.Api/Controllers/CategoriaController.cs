@@ -17,7 +17,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CategoriaDTO>>> Get()
+        public async Task<ActionResult<IEnumerable<CategoriaDTOTwo>>> Get()
         {
             var categoriaDto = await _service.GetCategorias();
             if (categoriaDto == null) { return NotFound("Categorias não foram encontradas"); }

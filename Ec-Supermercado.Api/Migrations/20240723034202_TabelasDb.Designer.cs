@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ec_Supermercado.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240722175959_TabelasDb")]
+    [Migration("20240723034202_TabelasDb")]
     partial class TabelasDb
     {
         /// <inheritdoc />

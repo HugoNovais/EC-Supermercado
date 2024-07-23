@@ -4,7 +4,7 @@ namespace Ec_Supermercado.Api.Services.CategoriaService
 {
     public interface ICategoriaService
     {
-        Task<IEnumerable<CategoriaDTO>> GetCategorias();
+        Task<IEnumerable<CategoriaDTOTwo>> GetCategorias();
         Task<IEnumerable<CategoriaDTO>> GetProdutosPorCategoria();
         Task<CategoriaDTO> GetCategoriaById(int id);
         Task AddCategoria(CategoriaDTO categoriaDto);

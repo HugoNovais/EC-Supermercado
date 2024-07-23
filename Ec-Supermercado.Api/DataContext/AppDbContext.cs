@@ -14,10 +14,15 @@ namespace Ec_Supermercado.Api.DataContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Produto>()
-                .HasOne(b => b.Categoria)
-                .WithMany(a => a.Produtos)
-                .HasForeignKey(b => b.CategoryId);
+            modelBuilder.Entity<Categoria>().HasKey(c => c.CategoryId);
+
+            modelBuilder.Entity<Categoria>()
+                .HasMany(c => c.Produtos)
+                .WithOne(p => p.Categoria)
+                .HasForeignKey(p => p.CategoryId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 }
