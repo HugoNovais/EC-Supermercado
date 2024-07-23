@@ -6,9 +6,9 @@ namespace Ec_Supermercado.Api.Services.CategoriaService
     {
         Task<IEnumerable<CategoriaDTOTwo>> GetCategorias();
         Task<IEnumerable<CategoriaDTO>> GetProdutosPorCategoria();
-        Task<CategoriaDTO> GetCategoriaById(int id);
-        Task AddCategoria(CategoriaDTO categoriaDto);
-        Task UpdateCategoria(CategoriaDTO categoriaDto);
+        Task<CategoriaDTO>GetCategoriaById(int id);
+        Task AddCategoria(CategoriaDTOTwo categoriaDto);
+        Task UpdateCategoria(CategoriaDTOTwo categoriaDto);
         Task DeleteCategoria(int id);
         
     }

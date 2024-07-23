@@ -34,14 +34,14 @@ namespace Ec_Supermercado.Api.Services.CategoriaService
             return _mapper.Map<CategoriaDTO>(categoriaEntity);
         }
 
-        public async Task AddCategoria(CategoriaDTO categoriaDto)
+        public async Task AddCategoria(CategoriaDTOTwo categoriaDto)
         {
             var categoriaEntity = _mapper.Map<Categoria>(categoriaDto);
             await _repository.Create(categoriaEntity);
             categoriaDto.CategoryId = categoriaEntity.CategoryId;
         }
 
-        public async Task UpdateCategoria(CategoriaDTO categoriaDto)
+        public async Task UpdateCategoria(CategoriaDTOTwo categoriaDto)
         {
             var categoriaEntity = _mapper.Map<Categoria>(categoriaDto);
             await _repository.Update(categoriaEntity);
@@ -49,8 +49,9 @@ namespace Ec_Supermercado.Api.Services.CategoriaService
 
         public async Task DeleteCategoria(int id)
         {
-            var categoriaEntity =  _repository.GetById(id);
-            await _repository.Delete(categoriaEntity.Id);
+            var categoriaEntity =  _repository.GetById(id).Result;
+            await _repository.Delete(categoriaEntity.CategoryId);
+           
         }
 
 

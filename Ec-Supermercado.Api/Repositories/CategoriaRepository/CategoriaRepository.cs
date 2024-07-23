@@ -46,6 +46,7 @@ namespace Ec_Supermercado.Api.Repositories.CategoriaRepository
         {
             var category = await GetById(id);
             _appDbContext.Categorias.Remove(category);
+            await _appDbContext.SaveChangesAsync();
             return category;
         }
 

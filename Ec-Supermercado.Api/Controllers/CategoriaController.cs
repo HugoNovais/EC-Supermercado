@@ -46,7 +46,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] CategoriaDTO categoriaDto)
+        public async Task<ActionResult> Post([FromBody] CategoriaDTOTwo categoriaDto)
         {
             if (categoriaDto == null) return BadRequest("Preencha todos os campos!");
 
@@ -56,7 +56,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] CategoriaDTO categoriaDto)
+        public async Task<ActionResult> Put(int id, [FromBody] CategoriaDTOTwo categoriaDto)
         {
             if (id != categoriaDto.CategoryId) return BadRequest();
             if (categoriaDto == null) return BadRequest();
@@ -69,7 +69,8 @@ namespace Ec_Supermercado.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<CategoriaDTO>> Delete(int id)
         {
-            var categoriaDto = _service.GetCategoriaById(id);
+            var categoriaDto = await _service.GetCategoriaById(id);
+
             if(categoriaDto == null) return NotFound("Não foi possível localizar categoria");
 
             await _service.DeleteCategoria(id);
