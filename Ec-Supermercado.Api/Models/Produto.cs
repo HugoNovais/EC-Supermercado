@@ -10,7 +10,8 @@ namespace Ec_Supermercado.Api.Models
         public string Descricao { get; set; }
         public decimal Valor { get; set; }
         public long Estoque { get; set; }
+        public Categoria? Categoria { get; set; }
         public int CategoryId { get; set; }
-        public Categoria Categoria { get; set; }
+        
     }
 }

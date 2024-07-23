@@ -1,5 +1,7 @@
 using Ec_Supermercado.Api.DataContext;
+using Ec_Supermercado.Api.Repositories.CategoriaRepository;
 using Ec_Supermercado.Api.Repositories.UsuarioRepository;
+using Ec_Supermercado.Api.Services.CategoriaService;
 using Ec_Supermercado.Api.Services.UsuarioService;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,6 +23,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
