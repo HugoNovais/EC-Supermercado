@@ -4,6 +4,7 @@ using Ec_Supermercado.Api.Repositories.ProdutoRepository;
 using Ec_Supermercado.Api.Repositories.UsuarioRepository;
 using Ec_Supermercado.Api.Services.CategoriaService;
 using Ec_Supermercado.Api.Services.ProdutoService;
+using Ec_Supermercado.Api.Services.TokenService;
 using Ec_Supermercado.Api.Services.UsuarioService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -59,6 +60,7 @@ builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 
 var app = builder.Build();

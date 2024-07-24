@@ -1,4 +1,5 @@
-﻿using Ec_Supermercado.Api.Models;
+﻿using Ec_Supermercado.Api.DTOs;
+using Ec_Supermercado.Api.Models;
 using Ec_Supermercado.Api.Repositories.UsuarioRepository;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -18,10 +19,10 @@ namespace Ec_Supermercado.Api.Services.TokenService
             _usuarioRepository = usuarioRepository;
         }
 
-        public async Task<string> GenerateToken(Usuario usuario)
+        public async Task<string> GenerateToken(LoginDto loginDto)
         {
-            var userDataBase = await _usuarioRepository.GetByEmailSenha(usuario.Email, usuario.Senha);
-            if (usuario.Email != userDataBase.Email && usuario.Senha != userDataBase.Senha) { return String.Empty; }
+            var userDataBase = await _usuarioRepository.GetByEmailSenha(loginDto.Email, loginDto.Senha);
+            if (loginDto.Email != userDataBase.Email && loginDto.Senha != userDataBase.Senha) { return String.Empty; }
 
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:SecretKey"] ?? string.Empty));
 
@@ -35,7 +36,7 @@ namespace Ec_Supermercado.Api.Services.TokenService
                 audience: audience,
                 claims: new[]
                 {
-                    new Claim(type: ClaimTypes.Name, usuario.Email),
+                    new Claim(type: ClaimTypes.Name, userDataBase.Email),
                     
                 },
                 expires: DateTime.Now.AddHours(2),
