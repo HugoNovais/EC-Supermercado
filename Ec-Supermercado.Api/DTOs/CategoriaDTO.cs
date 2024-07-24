@@ -11,6 +11,6 @@ namespace Ec_Supermercado.Api.DTOs
         [MinLength(3)]
         [MaxLength(100)]
         public string Nome { get; set; }
-        public ICollection<Produto>? Produtos { get; set; }
+        public ICollection<ProdutoDTO>? Produtos { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Ec_Supermercado.Api.DTOs.Mappings
         public MappingCategoriaProduto()
         {
             CreateMap<Categoria, CategoriaDTO>().ReverseMap();
-            
+            CreateMap<Produto, ProdutoDTO>().ReverseMap();
         }
     }
 }
