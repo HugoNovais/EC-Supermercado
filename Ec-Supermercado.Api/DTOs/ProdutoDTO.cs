@@ -17,7 +17,7 @@ namespace Ec_Supermercado.Api.DTOs
         public decimal Valor { get; set; }
         [Required(ErrorMessage = "The Stock is Required")]
         public long Estoque { get; set; }
-        [Required(ErrorMessage = "The Category is Required")]]
+        [Required(ErrorMessage = "The Category is Required")]
         public int CategoryId { get; set; }
         //[JsonIgnore]
         //public Categoria? Categoria { get; set; }

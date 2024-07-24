@@ -23,6 +23,12 @@ namespace Ec_Supermercado.Api.Repositories.UsuarioRepository
             return await  _appDbContext.Usuarios.Where(c => c.Id == id).FirstOrDefaultAsync();
         }
 
+        public async Task<Usuario> GetByEmailSenha(string email, string senha)
+        {
+            var usuario = await _appDbContext.Usuarios.Where(c => c.Email == email && c.Senha == senha).FirstOrDefaultAsync();
+            return usuario;
+        }
+
         public async Task<Usuario> Create(Usuario usuario)
         {
             _appDbContext.Usuarios.Add(usuario);
