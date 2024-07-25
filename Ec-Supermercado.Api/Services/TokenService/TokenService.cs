@@ -37,7 +37,7 @@ namespace Ec_Supermercado.Api.Services.TokenService
                 claims: new[]
                 {
                     new Claim(type: ClaimTypes.Name, userDataBase.Email),
-                    
+                    new Claim(type: ClaimTypes.Role, userDataBase.Perfil.ToString()),
                 },
                 expires: DateTime.Now.AddHours(2),
                 signingCredentials: signinCredentials);

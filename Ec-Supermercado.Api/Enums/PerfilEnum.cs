@@ -1,5 +1,8 @@
-﻿namespace Ec_Supermercado.Api.Enums
+﻿using System.Text.Json.Serialization;
+
+namespace Ec_Supermercado.Api.Enums
 {
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum PerfilEnum
     {
         Usuario,

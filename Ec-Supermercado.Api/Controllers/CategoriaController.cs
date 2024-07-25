@@ -17,7 +17,7 @@ namespace Ec_Supermercado.Api.Controllers
             _service = service;
         }
 
-        [Authorize]
+        [Authorize(Roles = "Administrador")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaDTOTwo>>> Get()
         {
