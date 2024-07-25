@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Ec_Supermercado.Api.DTOs;
 using Ec_Supermercado.Api.Models;
+using Ec_Supermercado.Api.Pagination;
 using Ec_Supermercado.Api.Repositories.ProdutoRepository;
 
 namespace Ec_Supermercado.Api.Services.ProdutoService
@@ -20,6 +21,14 @@ namespace Ec_Supermercado.Api.Services.ProdutoService
         {
             var produtoEntity = await _produtoRepository.GetAll();
             return  _mapper.Map<IEnumerable<ProdutoDTO>>(produtoEntity);
+        }
+
+        public async Task<PagedList<ProdutoDTO>> GetParamsProduto(int pageNumber, int pageSize)
+        {
+            var produtos = await _produtoRepository.GetParamsAsync(pageNumber, pageSize);
+            var produtosDTO = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
+            
+            return new PagedList<ProdutoDTO>(produtosDTO, pageNumber, pageSize, produtos.TotalCount);
         }
 
         public async Task<ProdutoDTO> GetProdutoById(int id)

@@ -1,4 +1,5 @@
 ﻿using Ec_Supermercado.Api.DTOs;
+using Ec_Supermercado.Api.Pagination.Produto;
 using Ec_Supermercado.Api.Services.ProdutoService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,13 @@ namespace Ec_Supermercado.Api.Controllers
         {
             _produtoService = produtoService;
         }
+
+        [HttpGet("pagination")]
+        public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get([FromQuery] ProdutosParams produtoParameters)
+        {
+            var produtosDto = await _produtoService.GetParamsProduto(produtoParameters.PageNumber, produtoParameters.PageSize);
+        }
+
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get()
