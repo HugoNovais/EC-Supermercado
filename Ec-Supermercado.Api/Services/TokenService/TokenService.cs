@@ -22,7 +22,7 @@ namespace Ec_Supermercado.Api.Services.TokenService
         public async Task<string> GenerateToken(LoginDto loginDto)
         {
             var userDataBase = await _usuarioRepository.GetByEmailSenha(loginDto.Email, loginDto.Senha);
-            if (loginDto.Email != userDataBase.Email && loginDto.Senha != userDataBase.Senha) { return String.Empty; }
+            if (loginDto.Email != userDataBase.Email || loginDto.Senha != userDataBase.Senha) { return String.Empty; }
 
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:SecretKey"] ?? string.Empty));
 

@@ -1,5 +1,6 @@
 ﻿using Ec_Supermercado.Api.DTOs;
 using Ec_Supermercado.Api.Services.CategoriaService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,7 @@ namespace Ec_Supermercado.Api.Controllers
             _service = service;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaDTOTwo>>> Get()
         {
