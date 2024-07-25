@@ -1,4 +1,5 @@
 ﻿using Ec_Supermercado.Api.DTOs;
+using Ec_Supermercado.Api.Pagination.Extensions;
 using Ec_Supermercado.Api.Pagination.Produto;
 using Ec_Supermercado.Api.Services.ProdutoService;
 using Microsoft.AspNetCore.Http;
@@ -21,6 +22,10 @@ namespace Ec_Supermercado.Api.Controllers
         public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get([FromQuery] ProdutosParams produtoParameters)
         {
             var produtosDto = await _produtoService.GetParamsProduto(produtoParameters.PageNumber, produtoParameters.PageSize);
+
+            Response.AddPaginationHeader(new Models.PaginationHeader(produtosDto.CurrentPage, produtosDto.PageSize, produtosDto.TotalCount, produtosDto.TotalPages));
+
+            return Ok(produtosDto);
         }
 
 
