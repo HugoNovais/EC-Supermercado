@@ -1,5 +1,6 @@
 ﻿using Ec_Supermercado.Api.DataContext;
 using Ec_Supermercado.Api.Models;
+using Ec_Supermercado.Api.Pagination;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ec_Supermercado.Api.Repositories.CategoriaRepository
@@ -16,6 +17,12 @@ namespace Ec_Supermercado.Api.Repositories.CategoriaRepository
         public async Task<IEnumerable<Categoria>> GetAll()
         {
             return await _appDbContext.Categorias.ToListAsync();
+        }
+
+        public async Task<PagedList<Categoria>> GetParamsAsync(int pageNumber, int pageSize)
+        {
+           var query =  _appDbContext.Categorias.AsQueryable();
+           return await PagedList<Categoria>.ToPagedList(query, pageNumber, pageSize);
         }
 
         public async Task<Categoria> GetById(int id)

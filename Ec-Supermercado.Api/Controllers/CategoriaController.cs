@@ -1,4 +1,6 @@
 ﻿using Ec_Supermercado.Api.DTOs;
+using Ec_Supermercado.Api.Pagination.Categoria;
+using Ec_Supermercado.Api.Pagination.Extensions;
 using Ec_Supermercado.Api.Services.CategoriaService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -25,6 +27,15 @@ namespace Ec_Supermercado.Api.Controllers
             if (categoriaDto == null) { return NotFound("Categorias não foram encontradas"); }
             return Ok(categoriaDto);
         }
+
+        [HttpGet("pagination")]
+        public async Task<ActionResult<IEnumerable<CategoriaDTOTwo>>> Get([FromQuery] CategoriaParams categoriaParams)
+        {
+            var categoriasDto = await _service.GetParamsCategoria(categoriaParams.PageNumber, categoriaParams.PageSize);
+            Response.AddPaginationHeader(new Models.PaginationHeader(categoriasDto.CurrentPage, categoriasDto.PageSize, categoriasDto.TotalCount, categoriasDto.TotalPages));
+            return Ok(categoriasDto);
+        }
+
 
         [HttpGet("produtos")]
         public async Task<ActionResult<IEnumerable<CategoriaDTO>>> GetProdutosCategorias()

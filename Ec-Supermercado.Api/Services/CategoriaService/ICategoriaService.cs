@@ -1,4 +1,5 @@
 ﻿using Ec_Supermercado.Api.DTOs;
+using Ec_Supermercado.Api.Pagination;
 
 namespace Ec_Supermercado.Api.Services.CategoriaService
 {
@@ -6,6 +7,7 @@ namespace Ec_Supermercado.Api.Services.CategoriaService
     {
         Task<IEnumerable<CategoriaDTOTwo>> GetCategorias();
         Task<IEnumerable<CategoriaDTO>> GetProdutosPorCategoria();
+        Task<PagedList<CategoriaDTOTwo>> GetParamsCategoria(int pageNumber, int pageSize);
         Task<CategoriaDTO>GetCategoriaById(int id);
         Task AddCategoria(CategoriaDTOTwo categoriaDto);
         Task UpdateCategoria(CategoriaDTOTwo categoriaDto);
