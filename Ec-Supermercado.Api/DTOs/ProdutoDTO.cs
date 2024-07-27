@@ -18,6 +18,7 @@ namespace Ec_Supermercado.Api.DTOs
         [Required(ErrorMessage = "The Stock is Required")]
         public long Estoque { get; set; }
         [Required(ErrorMessage = "The Category is Required")]
+        public bool Ativo { get; set; }
         public int CategoryId { get; set; }
         //[JsonIgnore]
         //public Categoria? Categoria { get; set; }
