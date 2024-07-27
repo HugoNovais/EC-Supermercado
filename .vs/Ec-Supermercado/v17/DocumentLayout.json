@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\erros\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\erros\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAdAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Program.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Program.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Program.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAGQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T02:35:55.263Z",
+              "WhenOpened": "2024-07-27T04:28:02.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\Controllers\\ProdutoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
+              "DocumentIndex": 0,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T02:35:50.927Z",
+              "WhenOpened": "2024-07-27T04:16:46.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiException.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Erros\\ApiException.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Erros\\ApiException.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Erros\\ApiException.cs*",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Erros\\ApiException.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T04:14:17.13Z",
               "EditorCaption": ""
             }
           ]

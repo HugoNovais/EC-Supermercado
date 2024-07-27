@@ -1,4 +1,5 @@
 using Ec_Supermercado.Api.DataContext;
+using Ec_Supermercado.Api.Middleware;
 using Ec_Supermercado.Api.Repositories.CategoriaRepository;
 using Ec_Supermercado.Api.Repositories.ProdutoRepository;
 using Ec_Supermercado.Api.Repositories.UsuarioRepository;
@@ -96,6 +97,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
