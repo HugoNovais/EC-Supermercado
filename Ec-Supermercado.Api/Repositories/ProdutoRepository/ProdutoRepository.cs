@@ -25,6 +25,11 @@ namespace Ec_Supermercado.Api.Repositories.ProdutoRepository
             return await PagedList<Produto>.ToPagedList(query, pageNumber, pageSize);
         }
 
+        public async Task<PagedList<Produto>> GetParamsNomeAsync(string nome)
+        {
+
+        }
+
         public async Task<Produto> GetById(int id)
         {
             return await _appDbContext.Produtos.Where(c => c.ProdutoId == id).FirstOrDefaultAsync();
