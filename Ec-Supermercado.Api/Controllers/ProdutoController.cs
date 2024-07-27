@@ -28,6 +28,16 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(produtosDto);
         }
 
+        [HttpGet("pagination/nome")]
+        public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get([FromQuery] ProdutosFiltroNome produtosFiltroNome)
+        {
+            var produtosDto = await _produtoService.GetParamsProdutoNome(produtosFiltroNome.Nome, produtosFiltroNome.PageNumber, produtosFiltroNome.PageSize);
+
+            Response.AddPaginationHeader(new Models.PaginationHeader(produtosDto.CurrentPage, produtosDto.PageSize, produtosDto.TotalCount, produtosDto.TotalPages));
+
+            return Ok(produtosDto);
+        }
+
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get()

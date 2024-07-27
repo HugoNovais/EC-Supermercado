@@ -31,6 +31,14 @@ namespace Ec_Supermercado.Api.Services.ProdutoService
             return new PagedList<ProdutoDTO>(produtosDTO, pageNumber, pageSize, produtos.TotalCount);
         }
 
+        public async Task<PagedList<ProdutoDTO>> GetParamsProdutoNome(string nome, int pageNumber, int pageSize)
+        {
+            var produtos = await _produtoRepository.GetParamsNomeAsync(nome, pageNumber, pageSize);
+            var produtosDTO = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
+            return new PagedList<ProdutoDTO>(produtosDTO, pageNumber, pageSize, produtos.TotalCount);
+        }
+        
+
         public async Task<ProdutoDTO> GetProdutoById(int id)
         {
             var produtoEntity = await _produtoRepository.GetById(id);
