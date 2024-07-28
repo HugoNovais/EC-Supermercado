@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Ec_Supermercado.Api.DTOs;
 using Ec_Supermercado.Api.Models;
+using Ec_Supermercado.Api.Pagination;
 using Ec_Supermercado.Api.Repositories.UsuarioRepository;
 
 namespace Ec_Supermercado.Api.Services.UsuarioService
@@ -26,6 +27,13 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
         {
             var usuariosEntity = await _usuarioRepository.GetById(id);
             return _mapper.Map<UsuarioDTO>(usuariosEntity);
+        }
+
+        public async Task<PagedList<UsuarioDTO>> GetParamsUsuario(int pageNumber, int pageSize)
+        {
+            var usuariosEntity = await _usuarioRepository.GetParamsAsync(pageNumber, pageSize);
+            var usuariosDTO = _mapper.Map<IEnumerable<UsuarioDTO>>(usuariosEntity);
+            return new PagedList<UsuarioDTO>(usuariosDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
         }
 
         public async Task<UsuarioDTO> InativaUsuarioById(int id)

@@ -1,4 +1,6 @@
 ﻿using Ec_Supermercado.Api.DTOs;
+using Ec_Supermercado.Api.Pagination.Extensions;
+using Ec_Supermercado.Api.Pagination.Usuario;
 using Ec_Supermercado.Api.Services.UsuarioService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -38,6 +40,14 @@ namespace Ec_Supermercado.Api.Controllers
                 return NotFound("Usuario não encontrado!");
             }
             return Ok(usuarioDto);
+        }
+
+        [HttpGet("pagination")]
+        public async Task<ActionResult<IEnumerable<UsuarioDTO>>> Get([FromQuery] UsuarioParams usuarioParams)
+        {
+            var usuariosDto = await _usuarioService.GetParamsUsuario(usuarioParams.PageNumber, usuarioParams.PageSize);
+            Response.AddPaginationHeader(new Models.PaginationHeader(usuariosDto.CurrentPage, usuariosDto.PageSize, usuariosDto.TotalCount, usuariosDto.TotalPages));
+            return Ok(usuariosDto);
         }
 
         [Authorize(Roles = "Administrador")]

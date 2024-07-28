@@ -1,5 +1,6 @@
 ﻿using Ec_Supermercado.Api.DataContext;
 using Ec_Supermercado.Api.Models;
+using Ec_Supermercado.Api.Pagination;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -22,6 +23,12 @@ namespace Ec_Supermercado.Api.Repositories.UsuarioRepository
         public async Task<Usuario> GetById(int id)
         {
             return await  _appDbContext.Usuarios.Where(c => c.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<PagedList<Usuario>> GetParamsAsync(int pageNumber, int pageSize)
+        {
+            var query = _appDbContext.Usuarios.AsQueryable();
+            return await PagedList<Usuario>.ToPagedList(query, pageNumber ,pageSize);
         }
 
         public async Task<Usuario> GetByEmailSenha(string email, string senha)
