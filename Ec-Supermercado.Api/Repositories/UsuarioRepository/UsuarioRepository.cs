@@ -1,6 +1,7 @@
 ﻿using Ec_Supermercado.Api.DataContext;
 using Ec_Supermercado.Api.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Ec_Supermercado.Api.Repositories.UsuarioRepository
 {
@@ -26,6 +27,19 @@ namespace Ec_Supermercado.Api.Repositories.UsuarioRepository
         public async Task<Usuario> GetByEmailSenha(string email, string senha)
         {
             var usuario = await _appDbContext.Usuarios.Where(c => c.Email == email && c.Senha == senha).FirstOrDefaultAsync();
+            return usuario;
+        }
+
+        public async Task<Usuario> InativaUsuario(int id)
+        {
+            var usuario = await GetById(id);
+            if (usuario == null)
+            {
+                throw new Exception ("Não foi possível localizar usuário");
+            }
+            usuario.Ativo = false;
+            _appDbContext.Update(usuario);
+            await _appDbContext.SaveChangesAsync();
             return usuario;
         }
 

@@ -39,6 +39,22 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(usuarioDto);
         }
 
+        [HttpPut("inativaUsuario/{id}")]
+        public async Task<ActionResult<UsuarioDTO>> Put(int id)
+        {
+            try
+            {
+                var usuarioDto = await _usuarioService.InativaUsuarioById(id);
+                return Ok(usuarioDto);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest($"Não foi possível inativar funcionário: {ex.Message}");
+            }
+            
+        }
+
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] UsuarioDTO usuarioDto)
         {

@@ -28,6 +28,11 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
             return _mapper.Map<UsuarioDTO>(usuariosEntity);
         }
 
+        public async Task<UsuarioDTO> InativaUsuarioById(int id)
+        {
+            var usuarioEntity = await _usuarioRepository.InativaUsuario(id);
+            return _mapper.Map<UsuarioDTO>(usuarioEntity);
+        }
 
         public async Task AddUsuario(UsuarioDTO usuarioDto)
         {

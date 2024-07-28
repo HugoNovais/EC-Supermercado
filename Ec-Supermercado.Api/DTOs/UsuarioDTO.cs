@@ -15,6 +15,7 @@ namespace Ec_Supermercado.Api.DTOs
         public string Email { get; set; }
         [Required(ErrorMessage = "The Password is Required")]
         public string Senha { get; set; }
+        public bool Ativo {  get; set; }
         public PerfilEnum Perfil { get; set; }
     }
 }

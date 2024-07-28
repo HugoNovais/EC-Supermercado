@@ -7,6 +7,7 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
     {
         Task<IEnumerable<UsuarioDTO>> GetUsuarios();
         Task<UsuarioDTO> GetUsuarioById(int id);
+        Task<UsuarioDTO> InativaUsuarioById(int id);
         Task AddUsuario(UsuarioDTO usuarioDto);
         Task UpdateUsuario(UsuarioDTO usuarioDto);
         Task DeleteUsuario(int id);
