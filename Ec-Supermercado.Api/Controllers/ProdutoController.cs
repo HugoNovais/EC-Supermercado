@@ -2,6 +2,7 @@
 using Ec_Supermercado.Api.Pagination.Extensions;
 using Ec_Supermercado.Api.Pagination.Produto;
 using Ec_Supermercado.Api.Services.ProdutoService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -78,7 +79,8 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(produtoDto);
         }
 
-        [HttpPut("inativaUsuario/{id}")]
+        [Authorize(Roles = "Administrador")]
+        [HttpPut("inativaProduto/{id}")]
         public async Task<ActionResult> Put(int id)
         {
             try
@@ -93,6 +95,7 @@ namespace Ec_Supermercado.Api.Controllers
             }
         }
 
+        [Authorize(Roles = "SuperAdministrador")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<ProdutoDTO>> Delete(int id)
         {

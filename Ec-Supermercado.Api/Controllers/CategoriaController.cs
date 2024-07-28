@@ -19,7 +19,7 @@ namespace Ec_Supermercado.Api.Controllers
             _service = service;
         }
 
-        [Authorize(Roles = "Administrador")]
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaDTOTwo>>> Get()
         {
@@ -79,6 +79,7 @@ namespace Ec_Supermercado.Api.Controllers
 
         }
 
+        [Authorize(Roles = "SuperAdministrador")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<CategoriaDTO>> Delete(int id)
         {

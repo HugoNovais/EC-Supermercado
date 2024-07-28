@@ -1,5 +1,6 @@
 ﻿using Ec_Supermercado.Api.DTOs;
 using Ec_Supermercado.Api.Services.UsuarioService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,6 +40,7 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(usuarioDto);
         }
 
+        [Authorize(Roles = "Administrador")]
         [HttpPut("inativaUsuario/{id}")]
         public async Task<ActionResult<UsuarioDTO>> Put(int id)
         {
@@ -76,6 +78,7 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(usuarioDto);
         }
 
+        [Authorize(Roles = "SuperAdministrador")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<UsuarioDTO>> Delete(int id)
         {
