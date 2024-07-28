@@ -9,6 +9,7 @@ namespace Ec_Supermercado.Api.Services.ProdutoService
         Task <ProdutoDTO> GetProdutoById(int id);
         Task<PagedList<ProdutoDTO>> GetParamsProduto(int pageNumber,  int pageSize);
         Task<PagedList<ProdutoDTO>> GetParamsProdutoNome(string nome, int pageNumber, int pageSize);
+        Task<ProdutoDTO> InativaProdutoById(int id);
         Task AddProduto(ProdutoDTO produtoDTO);
 
         Task UpdateProduto (ProdutoDTO produtoDTO);

@@ -37,6 +37,16 @@ namespace Ec_Supermercado.Api.Repositories.ProdutoRepository
             return await _appDbContext.Produtos.Where(c => c.ProdutoId == id).FirstOrDefaultAsync();
         }
 
+        public async Task<Produto> InativaProduto(int id)
+        {
+            var produto = await GetById(id);
+            if (produto == null) throw new Exception("Não foi possível localizar produto");
+            produto.Ativo = false;
+            _appDbContext.Produtos.Update(produto);
+            await _appDbContext.SaveChangesAsync();
+            return produto;
+        }
+
         public async Task<Produto> Create(Produto produto)
         {
             _appDbContext.Produtos.Add(produto);

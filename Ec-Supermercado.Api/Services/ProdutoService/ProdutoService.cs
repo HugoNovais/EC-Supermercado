@@ -45,6 +45,12 @@ namespace Ec_Supermercado.Api.Services.ProdutoService
             return _mapper.Map<ProdutoDTO>(produtoEntity);
         }
 
+        public async Task<ProdutoDTO> InativaProdutoById(int id)
+        {
+            var produtoEntity = _produtoRepository.InativaProduto(id);
+            return _mapper.Map<ProdutoDTO>(produtoEntity);
+        }
+
         public async Task AddProduto(ProdutoDTO produtoDTO)
         {
             var produtoEntity = _mapper.Map<Produto>(produtoDTO);

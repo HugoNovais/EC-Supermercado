@@ -7,6 +7,7 @@ namespace Ec_Supermercado.Api.Repositories.ProdutoRepository
     {
         Task<PagedList<Produto>> GetParamsAsync(int pageNumber, int pageSize);
         Task<PagedList<Produto>> GetParamsNomeAsync(string nome, int pageNumber, int pageSize);
+        Task<Produto> InativaProduto(int id);
         Task<IEnumerable<Produto>> GetAll();
         Task<Produto> GetById(int id);
         Task<Produto> Create(Produto produto);

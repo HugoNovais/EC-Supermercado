@@ -78,6 +78,21 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(produtoDto);
         }
 
+        [HttpPut("inativaUsuario/{id}")]
+        public async Task<ActionResult> Put(int id)
+        {
+            try
+            {
+                var produtoDto = await _produtoService.InativaProdutoById(id);
+                return Ok(produtoDto);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest($"Não foi possível inativar produto: {ex.Message}");
+            }
+        }
+
         [HttpDelete("{id}")]
         public async Task<ActionResult<ProdutoDTO>> Delete(int id)
         {
