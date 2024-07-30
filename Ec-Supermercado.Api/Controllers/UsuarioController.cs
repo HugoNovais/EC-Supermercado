@@ -50,6 +50,16 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(usuariosDto);
         }
 
+        [HttpGet("pagination/nome")]
+        public async Task<ActionResult<IEnumerable<UsuarioDTO>>> Get([FromQuery] UsuarioFiltroNome usuarioFiltroNome)
+        {
+            var usuariosDto = await _usuarioService.GetParamsNomeUsuario(usuarioFiltroNome.Nome, usuarioFiltroNome.PageNumber, usuarioFiltroNome._pageSize);
+            Response.AddPaginationHeader(new Models.PaginationHeader(usuariosDto.CurrentPage, usuariosDto.PageSize, usuariosDto.TotalCount, usuariosDto.TotalPages));
+            return Ok(usuariosDto);
+
+        }
+
+
         [Authorize(Roles = "Administrador")]
         [HttpPut("inativaUsuario/{id}")]
         public async Task<ActionResult<UsuarioDTO>> Put(int id)

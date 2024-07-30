@@ -37,6 +37,14 @@ namespace Ec_Supermercado.Api.Repositories.UsuarioRepository
             return usuario;
         }
 
+        public async Task<PagedList<Usuario>> GetParamsNomeAsync(string nome, int pageNumber, int pageSize)
+        {
+            var query = _appDbContext.Usuarios.AsQueryable();
+            var teste = query.Where(c => c.Nome.Contains(nome));
+            return await PagedList<Usuario>.ToPagedList(teste, pageNumber, pageSize);
+        }
+
+
         public async Task<Usuario> InativaUsuario(int id)
         {
             var usuario = await GetById(id);

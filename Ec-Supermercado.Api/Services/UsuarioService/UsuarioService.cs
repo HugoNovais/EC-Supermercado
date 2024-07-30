@@ -36,6 +36,13 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
             return new PagedList<UsuarioDTO>(usuariosDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
         }
 
+        public async Task<PagedList<UsuarioDTO>> GetParamsNomeUsuario(string nome, int pageNumber, int pageSize)
+        {
+            var usuariosEntity = await _usuarioRepository.GetParamsNomeAsync(nome, pageNumber, pageSize);
+            var usuarioDTO = _mapper.Map<IEnumerable<UsuarioDTO>>(usuariosEntity);
+            return new PagedList<UsuarioDTO>(usuarioDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
+        }
+
         public async Task<UsuarioDTO> InativaUsuarioById(int id)
         {
             var usuarioEntity = await _usuarioRepository.InativaUsuario(id);
