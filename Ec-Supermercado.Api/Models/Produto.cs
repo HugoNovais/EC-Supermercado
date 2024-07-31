@@ -13,6 +13,7 @@ namespace Ec_Supermercado.Api.Models
         public bool Ativo { get; set; }
         public int CategoryId { get; set; }
         public Categoria? Categoria { get; set; }
+        public ICollection<VendaProduto>? VendaProdutos { get; set; }
 
     }
 }

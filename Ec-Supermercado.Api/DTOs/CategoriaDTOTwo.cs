@@ -10,5 +10,6 @@ namespace Ec_Supermercado.Api.DTOs
         [MinLength(3)]
         [MaxLength(100)]
         public string Nome { get; set; }
+
     }
 }
