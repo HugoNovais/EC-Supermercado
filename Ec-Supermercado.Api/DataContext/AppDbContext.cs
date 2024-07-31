@@ -5,8 +5,8 @@ namespace Ec_Supermercado.Api.DataContext
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
-        {}
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        { }
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
@@ -26,7 +26,7 @@ namespace Ec_Supermercado.Api.DataContext
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Venda>()
-            .HasKey(v => v.VendaId);
+                .HasKey(v => v.VendaId);
 
             modelBuilder.Entity<Venda>()
                 .HasMany(vp => vp.VendaProdutos)
@@ -37,14 +37,14 @@ namespace Ec_Supermercado.Api.DataContext
 
             modelBuilder.Entity<Venda>()
                 .HasOne(v => v.Usuario)
-                .WithOne(x => x.Venda)
-                .HasForeignKey<Venda>(y => y.UsuarioId)
+                .WithMany(u => u.Vendas)
+                .HasForeignKey(v => v.UsuarioId)
                 .IsRequired();
 
             modelBuilder.Entity<VendaProduto>()
                 .HasOne(vp => vp.Produto)
-                .WithOne(x => x.VendaProdutos)
-                .HasForeignKey<VendaProduto>(y => y.ProdutoId)
+                .WithMany(p => p.VendaProdutos)
+                .HasForeignKey(vp => vp.ProdutoId)
                 .IsRequired();
 
 
