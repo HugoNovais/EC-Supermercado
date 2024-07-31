@@ -25,18 +25,29 @@ namespace Ec_Supermercado.Api.DataContext
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<VendaProduto>()
-            .HasKey(vp => new { vp.VendaId, vp.ProdutoId });
+            modelBuilder.Entity<Venda>()
+            .HasKey(v => v.VendaId);
 
-            modelBuilder.Entity<VendaProduto>()
-                .HasOne(vp => vp.Venda)
-                .WithMany(v => v.VendaProdutos)
-                .HasForeignKey(vp => vp.VendaId);
+            modelBuilder.Entity<Venda>()
+                .HasMany(vp => vp.VendaProdutos)
+                .WithOne(x => x.Venda)
+                .HasForeignKey(y => y.VendaId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Venda>()
+                .HasOne(v => v.Usuario)
+                .WithOne(x => x.Venda)
+                .HasForeignKey<Venda>(y => y.UsuarioId)
+                .IsRequired();
 
             modelBuilder.Entity<VendaProduto>()
                 .HasOne(vp => vp.Produto)
-                .WithMany(p => p.VendaProdutos)
-                .HasForeignKey(vp => vp.ProdutoId);
+                .WithOne(x => x.VendaProdutos)
+                .HasForeignKey<VendaProduto>(y => y.ProdutoId)
+                .IsRequired();
+
+
 
         }
     }
