@@ -20,7 +20,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpGet]
-        public async Task <ActionResult<IEnumerable<UsuarioDTO>>>Get()
+        public async Task <ActionResult<IEnumerable<UsuarioDTOTwo>>>Get()
         {
             var usuariosDto = await _usuarioService.GetUsuarios();
 
@@ -49,7 +49,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpGet("pagination")]
-        public async Task<ActionResult<IEnumerable<UsuarioDTO>>> Get([FromQuery] UsuarioParams usuarioParams)
+        public async Task<ActionResult<IEnumerable<UsuarioDTOTwo>>> Get([FromQuery] UsuarioParams usuarioParams)
         {
             var usuariosDto = await _usuarioService.GetParamsUsuario(usuarioParams.PageNumber, usuarioParams.PageSize);
             Response.AddPaginationHeader(new Models.PaginationHeader(usuariosDto.CurrentPage, usuariosDto.PageSize, usuariosDto.TotalCount, usuariosDto.TotalPages));
@@ -57,7 +57,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpGet("pagination/nome")]
-        public async Task<ActionResult<IEnumerable<UsuarioDTO>>> Get([FromQuery] UsuarioFiltroNome usuarioFiltroNome)
+        public async Task<ActionResult<IEnumerable<UsuarioDTOTwo>>> Get([FromQuery] UsuarioFiltroNome usuarioFiltroNome)
         {
             var usuariosDto = await _usuarioService.GetParamsNomeUsuario(usuarioFiltroNome.Nome, usuarioFiltroNome.PageNumber, usuarioFiltroNome._pageSize);
             Response.AddPaginationHeader(new Models.PaginationHeader(usuariosDto.CurrentPage, usuariosDto.PageSize, usuariosDto.TotalCount, usuariosDto.TotalPages));

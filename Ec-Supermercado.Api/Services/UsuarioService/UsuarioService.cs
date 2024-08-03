@@ -17,10 +17,10 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<UsuarioDTO>> GetUsuarios()
+        public async Task<IEnumerable<UsuarioDTOTwo>> GetUsuarios()
         {
             var usuariosEntity = await _usuarioRepository.GetAll();
-            return _mapper.Map<IEnumerable<UsuarioDTO>>(usuariosEntity);
+            return _mapper.Map<IEnumerable<UsuarioDTOTwo>>(usuariosEntity);
         }
 
         public async Task<IEnumerable<UsuarioDTO>> GetVendasPorUsuarios()
@@ -35,18 +35,18 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
             return _mapper.Map<UsuarioDTO>(usuariosEntity);
         }
 
-        public async Task<PagedList<UsuarioDTO>> GetParamsUsuario(int pageNumber, int pageSize)
+        public async Task<PagedList<UsuarioDTOTwo>> GetParamsUsuario(int pageNumber, int pageSize)
         {
             var usuariosEntity = await _usuarioRepository.GetParamsAsync(pageNumber, pageSize);
-            var usuariosDTO = _mapper.Map<IEnumerable<UsuarioDTO>>(usuariosEntity);
-            return new PagedList<UsuarioDTO>(usuariosDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
+            var usuariosDTO = _mapper.Map<IEnumerable<UsuarioDTOTwo>>(usuariosEntity);
+            return new PagedList<UsuarioDTOTwo>(usuariosDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
         }
 
-        public async Task<PagedList<UsuarioDTO>> GetParamsNomeUsuario(string nome, int pageNumber, int pageSize)
+        public async Task<PagedList<UsuarioDTOTwo>> GetParamsNomeUsuario(string nome, int pageNumber, int pageSize)
         {
             var usuariosEntity = await _usuarioRepository.GetParamsNomeAsync(nome, pageNumber, pageSize);
-            var usuarioDTO = _mapper.Map<IEnumerable<UsuarioDTO>>(usuariosEntity);
-            return new PagedList<UsuarioDTO>(usuarioDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
+            var usuarioDTO = _mapper.Map<IEnumerable<UsuarioDTOTwo>>(usuariosEntity);
+            return new PagedList<UsuarioDTOTwo>(usuarioDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
         }
 
         public async Task<UsuarioDTO> InativaUsuarioById(int id)

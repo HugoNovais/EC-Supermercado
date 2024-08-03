@@ -7,7 +7,8 @@ namespace Ec_Supermercado.Api.DTOs.Mappings
     {
         public MappingUsuario()
         {
-            CreateMap<Usuario, UsuarioDTO>().ReverseMap();
+            CreateMap<Usuario, UsuarioDTO>().ReverseMap(); 
+            CreateMap<Usuario, UsuarioDTOTwo>().ReverseMap();
         }
     }
 }
