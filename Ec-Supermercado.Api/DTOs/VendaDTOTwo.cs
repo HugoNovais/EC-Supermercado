@@ -1,17 +1,16 @@
 ﻿using Ec_Supermercado.Api.Enums;
 using Ec_Supermercado.Api.Models;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 
 namespace Ec_Supermercado.Api.DTOs
 {
-    public class VendaDTO
+    public class VendaDTOTwo
     {
         public int VendaId { get; set; }
-        public ICollection<VendaProduto>? VendaProdutos { get; set; } 
+        //public ICollection<VendaProduto>? VendaProdutos { get; set; }
         [Required(ErrorMessage = "Usuario is Required")]
         public int UsuarioId { get; set; }
-        public UsuarioDTO? Usuario { get; set; }
+        //public Usuario? Usuario { get; set; }
         [Required(ErrorMessage = "Venda is Required")]
         public double VendaTotal { get; set; }
         [Required(ErrorMessage = "Pagamento is Required")]

@@ -6,8 +6,10 @@ namespace Ec_Supermercado.Api.Repositories.UsuarioRepository
     public interface IUsuarioRepository
     {
         Task<IEnumerable<Usuario>> GetAll();
+        Task<IEnumerable<Usuario>> GetUsuarioVenda();
         Task<PagedList<Usuario>> GetParamsAsync(int pageNumber, int pageSize);
         Task<PagedList<Usuario>> GetParamsNomeAsync(string nome, int pageNumber, int pageSize);
+        
         Task<Usuario> GetById(int id);
         Task<Usuario> GetByEmailSenha(string email, string senha);
         Task<Usuario> InativaUsuario(int id);

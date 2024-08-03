@@ -20,6 +20,11 @@ namespace Ec_Supermercado.Api.Repositories.UsuarioRepository
             return await _appDbContext.Usuarios.ToListAsync();
         }
 
+        public async Task<IEnumerable<Usuario>> GetUsuarioVenda()
+        {
+            return await _appDbContext.Usuarios.Include(c => c.Vendas).ToListAsync();
+        }
+
         public async Task<Usuario> GetById(int id)
         {
             return await  _appDbContext.Usuarios.Where(c => c.Id == id).FirstOrDefaultAsync();

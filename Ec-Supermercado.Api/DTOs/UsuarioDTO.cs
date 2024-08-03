@@ -18,6 +18,6 @@ namespace Ec_Supermercado.Api.DTOs
         public string Senha { get; set; }
         public bool Ativo {  get; set; }
         public PerfilEnum Perfil { get; set; }
-        //public ICollection<Venda>? Vendas { get; set; } 
+        public ICollection<VendaDTO>? Vendas { get; set; } 
     }
 }

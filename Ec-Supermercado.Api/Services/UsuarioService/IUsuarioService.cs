@@ -8,6 +8,7 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
     {
         Task<IEnumerable<UsuarioDTO>> GetUsuarios();
         Task<UsuarioDTO> GetUsuarioById(int id);
+        Task<IEnumerable<UsuarioDTO>> GetVendasPorUsuarios();
         Task<PagedList<UsuarioDTO>> GetParamsUsuario(int pageNumber, int pageSize);
         Task<PagedList<UsuarioDTO>> GetParamsNomeUsuario(string nome, int pageNumber, int pageSize);
         Task<UsuarioDTO> InativaUsuarioById(int id);

@@ -30,6 +30,12 @@ namespace Ec_Supermercado.Api.Controllers
             }
             return Ok(usuariosDto);
         }
+        [HttpGet("vendas")]
+        public async Task <ActionResult<IEnumerable<UsuarioDTO>>>GetVendasUsuario()
+        {
+            var usuarioDto = await _usuarioService.GetVendasPorUsuarios();
+            return Ok(usuarioDto);
+        }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<UsuarioDTO>> Get(int id)

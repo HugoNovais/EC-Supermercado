@@ -19,6 +19,8 @@ namespace Ec_Supermercado.Api.Repositories.VendaRepository
             return await _appDbContext.Vendas.ToListAsync();
         }
 
+      
+
         public async Task<Venda> GetById(int id)
         {
             return await _appDbContext.Vendas.Where(c => c.VendaId == id).FirstOrDefaultAsync();

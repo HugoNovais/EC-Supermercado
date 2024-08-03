@@ -8,6 +8,7 @@ namespace Ec_Supermercado.Api.DTOs.Mappings
         public MappingVenda() 
         {
             CreateMap<Venda, VendaDTO>().ReverseMap();
+            CreateMap<Venda, VendaDTOTwo>().ReverseMap();
         }
     }
 }

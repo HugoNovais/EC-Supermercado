@@ -23,6 +23,12 @@ namespace Ec_Supermercado.Api.Services.UsuarioService
             return _mapper.Map<IEnumerable<UsuarioDTO>>(usuariosEntity);
         }
 
+        public async Task<IEnumerable<UsuarioDTO>> GetVendasPorUsuarios()
+        {
+            var usuariosEntity = await _usuarioRepository.GetUsuarioVenda();
+            return _mapper.Map<IEnumerable<UsuarioDTO>>(usuariosEntity);
+        }
+
         public async Task<UsuarioDTO> GetUsuarioById(int id)
         {
             var usuariosEntity = await _usuarioRepository.GetById(id);

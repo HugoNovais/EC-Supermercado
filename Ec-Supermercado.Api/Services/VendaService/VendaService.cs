@@ -28,7 +28,7 @@ namespace Ec_Supermercado.Api.Services.VendaService
             return _mapper.Map<VendaDTO>(vendaEntity);
         }
 
-        public async Task AddVenda(VendaDTO vendaDTO)
+        public async Task AddVenda(VendaDTOTwo vendaDTO)
         {
             var vendaEntity = _mapper.Map<Venda>(vendaDTO);
             await _repository.Create(vendaEntity);

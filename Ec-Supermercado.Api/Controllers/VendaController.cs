@@ -34,7 +34,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] VendaDTO vendaDTO)
+        public async Task<ActionResult> Post([FromBody] VendaDTOTwo vendaDTO)
         {
             if (vendaDTO == null) return BadRequest("Preencha todos os campos");
 
