@@ -1,4 +1,5 @@
 ﻿using Ec_Supermercado.Api.Enums;
+using Ec_Supermercado.Api.Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace Ec_Supermercado.Api.DTOs
@@ -17,5 +18,6 @@ namespace Ec_Supermercado.Api.DTOs
         public string Senha { get; set; }
         public bool Ativo {  get; set; }
         public PerfilEnum Perfil { get; set; }
+        //public ICollection<Venda>? Vendas { get; set; } 
     }
 }

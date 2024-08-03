@@ -37,7 +37,12 @@ namespace Ec_Supermercado.Api.Controllers
         public async Task<ActionResult> Post([FromBody] VendaDTO vendaDTO)
         {
             if (vendaDTO == null) return BadRequest("Preencha todos os campos");
-            await _vendaService.AddUsuario(vendaDTO);
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            await _vendaService.AddVenda(vendaDTO);
             return Ok(vendaDTO);
            
         }

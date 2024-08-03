@@ -98,7 +98,7 @@ namespace Ec_Supermercado.Api.Controllers
             return Ok(usuarioDto);
         }
 
-        [Authorize(Roles = "SuperAdministrador")]
+        //[Authorize(Roles = "SuperAdministrador")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<UsuarioDTO>> Delete(int id)
         {

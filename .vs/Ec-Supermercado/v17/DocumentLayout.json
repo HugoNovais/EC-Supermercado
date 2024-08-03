@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Migrations\\20240731050029_RelacaoVendasCorrigida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ec-Supermercado.Api\\Migrations\\20240731050029_RelacaoVendasCorrigida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\vendaproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\vendaproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\dtos\\vendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\dtos\\vendadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\repositories\\categoriarepository\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\repositories\\categoriarepository\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,51 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240731050029_RelacaoVendasCorrigida.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Migrations\\20240731050029_RelacaoVendasCorrigida.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Migrations\\20240731050029_RelacaoVendasCorrigida.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Migrations\\20240731050029_RelacaoVendasCorrigida.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\Migrations\\20240731050029_RelacaoVendasCorrigida.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T05:00:29.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DataContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\DataContext\\AppDbContext.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DataContext\\AppDbContext.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\DataContext\\AppDbContext.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAqwBwAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T03:43:41.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Categoria.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Categoria.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Categoria.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T04:40:25.598Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -93,54 +58,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Usuario.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Usuario.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABLAAAA",
+              "DocumentIndex": 4,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Controllers\\CategoriaController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T03:54:29.378Z",
+              "WhenOpened": "2024-08-03T00:16:22.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Produto.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Produto.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABgAAAA",
+              "DocumentIndex": 5,
+              "Title": "CategoriaDTO.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\CategoriaDTO.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\DTOs\\CategoriaDTO.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\CategoriaDTO.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\DTOs\\CategoriaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T03:43:02.112Z",
+              "WhenOpened": "2024-08-03T00:16:15.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VendaProduto.cs",
-              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\VendaProduto.cs",
-              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\VendaProduto.cs",
-              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\VendaProduto.cs",
-              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\VendaProduto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "Title": "CategoriaRepository.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Repositories\\CategoriaRepository\\CategoriaRepository.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Repositories\\CategoriaRepository\\CategoriaRepository.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Repositories\\CategoriaRepository\\CategoriaRepository.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Repositories\\CategoriaRepository\\CategoriaRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T02:53:34.333Z",
+              "WhenOpened": "2024-08-03T00:14:48.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Produto.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Produto.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Produto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T00:10:53.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Categoria.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Categoria.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Categoria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T00:10:40.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\DTOs\\UsuarioDTO.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\UsuarioDTO.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\DTOs\\UsuarioDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T00:09:39.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VendaDTO.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\VendaDTO.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\DTOs\\VendaDTO.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\VendaDTO.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\DTOs\\VendaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T00:09:36.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Usuario.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Usuario.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T00:09:33.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Venda.cs",
               "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Venda.cs",
               "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Venda.cs",
               "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Venda.cs",
               "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Venda.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABCAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T02:50:06.707Z",
+              "WhenOpened": "2024-08-03T00:09:02.192Z",
               "EditorCaption": ""
             }
           ]

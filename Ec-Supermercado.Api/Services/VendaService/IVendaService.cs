@@ -6,7 +6,7 @@ namespace Ec_Supermercado.Api.Services.VendaService
     {
         Task<IEnumerable<VendaDTO>> GetVendas();
         Task<VendaDTO> GetVendasById(int id);
-        Task AddUsuario(VendaDTO vendaDTO);
+        Task AddVenda(VendaDTO vendaDTO);
         Task Update(VendaDTO vendaDTO);
         Task Delete(int id);
     }

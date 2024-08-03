@@ -19,7 +19,7 @@ namespace Ec_Supermercado.Api.Services.VendaService
         public async Task<IEnumerable<VendaDTO>> GetVendas()
         {
             var vendaEntity = await _repository.GetAll();
-            return  _mapper.Map<IEnumerable<VendaDTO>>(vendaEntity);
+            return _mapper.Map<IEnumerable<VendaDTO>>(vendaEntity);
         }
 
         public async Task<VendaDTO> GetVendasById(int id)
@@ -28,7 +28,7 @@ namespace Ec_Supermercado.Api.Services.VendaService
             return _mapper.Map<VendaDTO>(vendaEntity);
         }
 
-        public async Task AddUsuario(VendaDTO vendaDTO)
+        public async Task AddVenda(VendaDTO vendaDTO)
         {
             var vendaEntity = _mapper.Map<Venda>(vendaDTO);
             await _repository.Create(vendaEntity);
@@ -47,5 +47,6 @@ namespace Ec_Supermercado.Api.Services.VendaService
             await _repository.Delete(vendaEntity.VendaId);
 
 
+        }
     }
 }
