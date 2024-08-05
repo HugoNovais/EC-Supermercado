@@ -19,7 +19,10 @@ namespace Ec_Supermercado.Api.Repositories.VendaRepository
             return await _appDbContext.Vendas.ToListAsync();
         }
 
-      
+        public async Task<IEnumerable<Venda>> GetVendaProduto()
+        {
+            return await _appDbContext.Vendas.Include(c => c.VendaProdutos).ToListAsync();  
+        }
 
         public async Task<Venda> GetById(int id)
         {

@@ -25,6 +25,8 @@ namespace Ec_Supermercado.Api.Repositories.VendaProdutoRepository
             return await _appDbContext.VendaProdutos.Where(c => c.VendaProdutoId == id).FirstOrDefaultAsync();
         }
 
+       
+
         public async Task<VendaProduto> Create(VendaProduto vendaProduto)
         {
             _appDbContext.VendaProdutos.Add(vendaProduto);
