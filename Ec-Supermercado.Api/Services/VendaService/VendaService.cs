@@ -22,6 +22,12 @@ namespace Ec_Supermercado.Api.Services.VendaService
             return _mapper.Map<IEnumerable<VendaDTO>>(vendaEntity);
         }
 
+        public async Task<IEnumerable<VendaDTO>> GetVendasPorVendaProduto()
+        {
+            var vendaEntity = await _repository.GetVendaProduto();
+            return _mapper.Map<IEnumerable<VendaDTO>>(vendaEntity);
+        }
+
         public async Task<VendaDTO> GetVendasById(int id)
         {
             var vendaEntity = await _repository.GetById(id);
