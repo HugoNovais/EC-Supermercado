@@ -25,12 +25,35 @@ namespace Ec_Supermercado.Api.Repositories.VendaProdutoRepository
             return await _appDbContext.VendaProdutos.Where(c => c.VendaProdutoId == id).FirstOrDefaultAsync();
         }
 
-       
-
+        /*public async Task<VendaProduto> QuantidadeRetirada(double quantidade)
+        {
+            var quantidadeRe = await _appDbContext.VendaProdutos.
+        }
+        */
         public async Task<VendaProduto> Create(VendaProduto vendaProduto)
         {
+            var produto = await _appDbContext.Produtos.FirstOrDefaultAsync(p => p.ProdutoId == vendaProduto.ProdutoId);
+
+            if (produto == null)
+            {
+                throw new Exception("Produto não encontrado");
+            }
+
+            // Verifica se há estoque suficiente
+            if (produto.Estoque < vendaProduto.QuantidadeRetirada)
+            {
+                throw new Exception("Estoque insuficiente");
+            }
+
+            // Subtrai a quantidade do estoque
+            produto.Estoque -= vendaProduto.QuantidadeRetirada;
+
+            // Adiciona o VendaProduto no contexto
             _appDbContext.VendaProdutos.Add(vendaProduto);
+
+            // Salva as mudanças no banco de dados
             await _appDbContext.SaveChangesAsync();
+
             return vendaProduto;
         }
 

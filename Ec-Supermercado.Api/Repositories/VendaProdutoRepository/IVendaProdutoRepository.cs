@@ -7,6 +7,7 @@ namespace Ec_Supermercado.Api.Repositories.VendaProdutoRepository
         Task<IEnumerable<VendaProduto>> GetAll();
        
         Task<VendaProduto> GetById(int id);
+        Task<VendaProduto> QuantidadeRetirada(double quantidade);
         Task<VendaProduto> Create(VendaProduto vendaProduto);
         Task<VendaProduto> Update(VendaProduto vendaProduto);
         Task<VendaProduto> DeleteById(int id);

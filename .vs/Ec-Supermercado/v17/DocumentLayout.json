@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\dtos\\produtodtotwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\dtos\\produtodtotwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|c:\\dev\\ec-supermercado\\ec-supermercado\\ec-supermercado.api\\services\\vendaservice\\ivendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75877EBF-C6F1-41B9-8A72-FDDA7842A0A2}|Ec-Supermercado.Api\\Ec-Supermercado.Api.csproj|solutionrelative:ec-supermercado.api\\services\\vendaservice\\ivendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +55,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProdutoDTOTwo.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\ProdutoDTOTwo.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\DTOs\\ProdutoDTOTwo.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\ProdutoDTOTwo.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\DTOs\\ProdutoDTOTwo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:19:39.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Models\\Produto.cs",
+              "ToolTip": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Models\\Produto.cs",
+              "RelativeToolTip": "Ec-Supermercado.Api\\Models\\Produto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:15:39.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IVendaService.cs",
               "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Services\\VendaService\\IVendaService.cs",
               "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Services\\VendaService\\IVendaService.cs",
@@ -59,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "VendaDTOTwo.cs",
               "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\VendaDTOTwo.cs",
               "RelativeDocumentMoniker": "Ec-Supermercado.Api\\DTOs\\VendaDTOTwo.cs",
@@ -72,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "VendaController.cs",
               "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\VendaController.cs",
               "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Controllers\\VendaController.cs",
@@ -85,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Controllers\\UsuarioController.cs",
@@ -98,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "VendaDTO.cs",
               "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\DTOs\\VendaDTO.cs",
               "RelativeDocumentMoniker": "Ec-Supermercado.Api\\DTOs\\VendaDTO.cs",
@@ -111,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "VendaService.cs",
               "DocumentMoniker": "C:\\dev\\EC-Supermercado\\Ec-Supermercado\\Ec-Supermercado.Api\\Services\\VendaService\\VendaService.cs",
               "RelativeDocumentMoniker": "Ec-Supermercado.Api\\Services\\VendaService\\VendaService.cs",
