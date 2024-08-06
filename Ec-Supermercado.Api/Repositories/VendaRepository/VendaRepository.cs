@@ -31,6 +31,7 @@ namespace Ec_Supermercado.Api.Repositories.VendaRepository
 
         public async Task<Venda> Create(Venda venda)
         {
+            
             _appDbContext.Vendas.Add(venda);
             await _appDbContext.SaveChangesAsync();
             return venda;

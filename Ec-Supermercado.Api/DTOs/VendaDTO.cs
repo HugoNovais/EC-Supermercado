@@ -13,7 +13,7 @@ namespace Ec_Supermercado.Api.DTOs
         public int UsuarioId { get; set; }
         public UsuarioDTO? Usuario { get; set; }
         [Required(ErrorMessage = "Venda is Required")]
-        public double VendaTotal { get; set; }
+        public decimal VendaTotal { get; set; }
         [Required(ErrorMessage = "Pagamento is Required")]
         public PagamentoEnum Pagamento { get; set; }
         public string? Detalhes { get; set; }

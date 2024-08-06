@@ -10,7 +10,7 @@ namespace Ec_Supermercado.Api.Models
         public ICollection<VendaProduto>? VendaProdutos { get; set; }
         public int UsuarioId { get; set; }
         public Usuario? Usuario { get; set; }
-        public double VendaTotal { get; set; }
+        public decimal VendaTotal { get; set; }
         public PagamentoEnum Pagamento { get; set; }
         public string? Detalhes { get; set; }
         public DateTime DataCadastro { get; set; } = DateTime.Now;

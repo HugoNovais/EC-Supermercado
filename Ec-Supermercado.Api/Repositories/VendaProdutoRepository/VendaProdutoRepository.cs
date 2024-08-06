@@ -48,6 +48,20 @@ namespace Ec_Supermercado.Api.Repositories.VendaProdutoRepository
             // Subtrai a quantidade do estoque
             produto.Estoque -= vendaProduto.QuantidadeRetirada;
 
+            // Busca a venda pelo Id
+            var venda = await _appDbContext.Vendas.FirstOrDefaultAsync(p => p.VendaId == vendaProduto.VendaId);
+
+            if (venda == null)
+            {
+                throw new Exception("Venda não encontrada");
+            }
+
+            // Calcula o valor total do VendaProduto
+            var valorVendaProduto = vendaProduto.QuantidadeRetirada * produto.Valor;
+
+            // Atualiza o total da venda
+            venda.VendaTotal += valorVendaProduto;
+
             // Adiciona o VendaProduto no contexto
             _appDbContext.VendaProdutos.Add(vendaProduto);
 
