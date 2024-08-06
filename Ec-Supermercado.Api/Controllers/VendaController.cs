@@ -18,7 +18,7 @@ namespace Ec_Supermercado.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<VendaDTO>>> Get()
+        public async Task<ActionResult<IEnumerable<VendaDTOTwo>>> Get()
         {
             var vendasDto = await _vendaService.GetVendas();
             if (vendasDto == null) return NotFound("Vendas não encontradas");
