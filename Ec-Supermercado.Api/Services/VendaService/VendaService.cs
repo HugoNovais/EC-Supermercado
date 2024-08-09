@@ -31,9 +31,9 @@ namespace Ec_Supermercado.Api.Services.VendaService
 
         public async Task<PagedList<VendaDTOTwo>> GetParamsVendas(int pageNumber, int pageSize)
         {
-            var usuariosEntity = await _repository.GetParamsAsync(pageNumber, pageSize);
-            var usuariosDTO = _mapper.Map<IEnumerable<VendaDTOTwo>>(usuariosEntity);
-            return new PagedList<VendaDTOTwo>(usuariosDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
+            var vendaEntity = await _repository.GetParamsAsync(pageNumber, pageSize);
+            var vendaDTO = _mapper.Map<IEnumerable<VendaDTOTwo>>(vendaEntity);
+            return new PagedList<VendaDTOTwo>(vendaDTO, pageNumber, pageSize, vendaEntity.TotalCount);
         }
 
         public async Task<VendaDTO> GetVendasById(int id)
