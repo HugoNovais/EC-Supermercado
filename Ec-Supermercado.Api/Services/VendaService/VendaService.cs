@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Ec_Supermercado.Api.DTOs;
 using Ec_Supermercado.Api.Models;
+using Ec_Supermercado.Api.Pagination;
 using Ec_Supermercado.Api.Repositories.VendaRepository;
 
 namespace Ec_Supermercado.Api.Services.VendaService
@@ -26,6 +27,13 @@ namespace Ec_Supermercado.Api.Services.VendaService
         {
             var vendaEntity = await _repository.GetVendaProduto();
             return _mapper.Map<IEnumerable<VendaDTO>>(vendaEntity);
+        }
+
+        public async Task<PagedList<VendaDTOTwo>> GetParamsVendas(int pageNumber, int pageSize)
+        {
+            var usuariosEntity = await _repository.GetParamsAsync(pageNumber, pageSize);
+            var usuariosDTO = _mapper.Map<IEnumerable<VendaDTOTwo>>(usuariosEntity);
+            return new PagedList<VendaDTOTwo>(usuariosDTO, pageNumber, pageSize, usuariosEntity.TotalCount);
         }
 
         public async Task<VendaDTO> GetVendasById(int id)
