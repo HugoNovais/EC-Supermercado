@@ -1,4 +1,7 @@
 ﻿using Ec_Supermercado.Api.DTOs;
+using Ec_Supermercado.Api.Pagination.Extensions;
+using Ec_Supermercado.Api.Pagination.Usuario;
+using Ec_Supermercado.Api.Pagination.Venda;
 using Ec_Supermercado.Api.Services.VendaService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +33,14 @@ namespace Ec_Supermercado.Api.Controllers
         {
             var vendasDto = await _vendaService.GetVendasPorVendaProduto();
             if (vendasDto == null) return NotFound("Vendas não encontradas");
+            return Ok(vendasDto);
+        }
+
+        [HttpGet("pagination")]
+        public async Task<ActionResult<IEnumerable<VendaDTOTwo>>> Get([FromQuery] VendaParams vendaParams)
+        {
+            var vendasDto = await _vendaService.GetParamsVendas(vendaParams.PageNumber, vendaParams.PageSize);
+            Response.AddPaginationHeader(new Models.PaginationHeader(vendasDto.CurrentPage, vendasDto.PageSize, vendasDto.TotalCount, vendasDto.TotalPages));
             return Ok(vendasDto);
         }
 
